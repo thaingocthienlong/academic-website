@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 Academic Website
 
-## Getting Started
+**academic-website** là một trang web cá nhân (hoặc học thuật) đơn giản, được xây dựng để giúc bạn giới thiệu bản thân, chia sẻ nghiên cứu, bài viết, tài liệu và liên hệ với mọi người. Trang dựa trên các công nghệ web hiện đại, dễ chỉnh sửa và mở rộng theo nhu cầu cá nhân.
 
-First, run the development server:
+---
+
+## ⚙️ Tính năng chính
+
+* 🏠 **Trang chủ**: Giới thiệu ngắn gọn về cá nhân hoặc đơn vị
+* 📄 **Giới thiệu / About**: Trình bày chi tiết về học vấn, kỹ năng, kinh nghiệm
+* 📚 **Dự án & bài viết**: Danh mục các dự án, bài báo khoa học, bài blog
+* 🗂️ **Tài liệu / Resources**: Tổng hợp slide, tài liệu học tập, hướng dẫn
+* 📬 **Liên hệ**: Mẫu form hoặc địa chỉ email để kết nối với bạn
+* 📱 **Responsive UI**: Tương thích mọi thiết bị (desktop & mobile)
+
+---
+
+## 🚀 Bắt đầu
+
+### 1. Yêu cầu
+
+* Node.js & npm (cần thiết để chạy local hoặc build)
+* Trình duyệt hỗ trợ HTML5, CSS3, JS
+
+### 2. Cài đặt
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Chạy local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Truy cập `http://localhost:3000` để xem giao diện.
 
-## Learn More
+### 4. Build deploy
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+File build sẽ nằm trong `dist/` hoặc `build/`. Đem lên GitHub Pages, Netlify, Vercel v.v.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧹 Cấu trúc dự án
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+academic-website/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.js
+│   ├── index.js
+│   └── styles/
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📚 Công nghệ sử dụng
+
+* **React.js**
+* **React Router**
+* **CSS Modules / SCSS**
+* **Form handler / API**
+
+---
+
+## 📌 Tùy chỉnh nhanh
+
+1. Cập nhật thông tin: tên, avatar, email, bio
+2. Chính sửa danh mục projects/blog trong `src/data/`
+3. Tùy chỉnh giao diện: Font, màu, layout mobile-first
+
+---
+
+## 🔧 Đóng góp
+
+1. **Fork repo**
+2. Tạo branch mới: `git checkout -b chuc-nang-moi`
+3. Commit & Push: `git commit -m "Thêm ..."`
+4. Mở Pull Request
+
+---
+
+## 📢 Liên hệ
+
+Gửi email đến **\[Tên của bạn]** qua: `your.email@example.com`
+
+---
+
+**Gợi ý mở rộng**:
+
+* Hỗ trợ blog, markdown
+* Đa ngôn ngữ (i18n)
+* Dark mode, SEO
+* Tích hợp analytics
+
+---
